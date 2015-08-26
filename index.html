@@ -812,13 +812,26 @@
 		<script type="text/javascript" src="js/kinetic.js"></script>
 		<script type="text/javascript" src="js/jquery.final-countdown.js"></script>
 		<script type="text/javascript">  
+    	var today = new Date();
+
+    	var target = new Date(today);
+		
+		target.setDate(12);
+		target.setMonth(8);
+		target.setHours(8,0,0,0);;
+
+		// Countdown start from yesterday
+		var yesterday = new Date(today);
+		yesterday.setDate(today.getDate() - 1);
+		yesterday.setHours(0,0,0,0);;
     	$('document').ready(function() {
         'use strict';
+
         
     	$('.countdown').final_countdown({
-            'start': 1428825600,
-            'end': 1442044800,
-            'now': 1440553440     
+            'start': yesterday.getTime() / 1000,
+            'end': target.getTime() / 1000,
+            'now': today.getTime() / 1000,      
         });
     	});
 		</script>
