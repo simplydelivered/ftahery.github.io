@@ -44,6 +44,22 @@
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
+         <style>
+     	 #map-container { height: 300px }
+    	</style>
+
+    	 <style>
+      body { background-color:#CCC }
+      #map-outer {  height: 440px; 
+	  				padding: 20px; 
+					border: 2px solid #CCC; 
+					margin-bottom: 20px; 
+					background-color:#FFF }
+	  #map-container { height: 400px }
+	  @media all and (max-width: 991px) {
+		#map-outer  { height: 650px }
+		}
+    </style>
 
     </head>
 	
@@ -84,13 +100,15 @@
                     <ul id="nav" class="nav navbar-nav">
                         <li class="current"><a href="#body">HOME</a></li>
                         <li><a href="#about">ABOUT</a></li>    
-                        <li><a href="#about_tedxmsrit">TEDx MSRIT</a></li>  						
+                        <li><a href="#about_tedxmsrit">TEDx MSRIT</a></li>
+                        <li><a href="#theme">THEME</a></li> 						
                         <li><a href="#speakers">SPEAKERS</a></li>
 						<li><a href="#schedule">SCHEDULE</a></li>
                         <li><a href="#team">TEAM</a></li>
                         <li><a href="#partners">PARTNERS</a></li>
                         <li><a href="#sponsors">SPONSORS</a></li>
-                        <li><a href="#Clock">COUNTDOWN</a></li> 
+                        <li><a href="#Clock">COUNTDOWN</a></li>
+                        <li><a href="#map">MAP</a></li>
 
                                             
                        
@@ -187,9 +205,11 @@
 							
 							<div class="service-desc">
 								<h3>TED</h3>
-								<p><font size=2px >TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. 
-								The two annual TED Conferences invite the world's leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. 
-								TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.
+								<p><font size=2px >TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a conference in California 1984, TED has grown to support those world-changing ideas with many initiatives.
+								At a TED conference, the world’s leading thinkers and doers are asked to give the talk of their lives in 18 minutes or less. TED speakers have included Roger Ebert, Sheryl Sandberg, Bill Gates, Elizabeth Gilbert, Benoit Mandelbrot, Philippe Starck, Ngozi Okonjo-Iweala, Brian Greene, Isabel Allende and former UK Prime Minister Gordon Brown.
+								On TED.com, talks from TED conferences are shared with the world for free as TED Talks videos. A new TED Talk is posted every weekday. Through the Open Translation Project, TED Talks are subtitled by volunteers worldwide. Through our distribution networks, TED Talks are shared on TV, radio, Netflix and many websites.
+								The TEDx initiative grants free licenses to people around the world to organize TED-style events in their communities with TED Talks and live speakers. Selected talks from these events are also turned into TED Talks videos.
+								The annual TED Prize grants $1 million to an exceptional individual with a wish to change the world. The TED Fellows program helps world-changing innovators from around the globe to become part of the TED community and, with its help, amplify the impact of their remarkable projects and activities. TED-Ed creates short video lessons by pairing master teachers with animators, for use in classroom instruction or independent learning.
 								<br></br>
 								Follow TED on Twitter at <p><a href="https://twitter.com/TEDTalks"><font color='red'><img src="img/twitter.png" alt="Smiley face" height="42" width="42"></font></a></p>
 								Follow TED on Facebook at <p><a href="https://www.facebook.com/TED"><font color='red'><img src="img/fb.png" alt="Smiley face" height="42" width="42"></font></a></p>
@@ -208,8 +228,7 @@
 							
 							<div class="service-desc">
 								<h3>TEDx</h3>
-								<p><font size=2px >In the spirit of ideas worth spreading, TED has created a program called TEDx. 
-								TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. 
+								<p><font size=2px >In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. 
 								<br></br>
 								More on TEDx Program
 								<p><a href="https://www.ted.com/about/programs-initiatives/tedx-program"><font color='red'>Click me</font></a></p>
@@ -232,7 +251,8 @@
 								At our TEDxMSRIT event, TEDTalks video and live speakers will combine to spark deep discussion and connection in a small group.
 								The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.
 								<br></br>
-								Follow TEDxMSRIT on Facebook at <p><a href="https://www.facebook.com/tedxmsrit?fref=ts"><font color='red'><img src="img/fb.png" alt="Smiley face" height="42" width="42"></font></a></p>
+								Follow TEDxMSRIT on Facebook at <p><a href="https://www.facebook.com/tedxmsrit"><font color='red'><img src="img/fb.png" alt="Smiley face" height="42" width="42"></font></a></p>
+								Follow TEDcMSRIT on Twitter at <p><a href="https://twitter.com/TEDxMSRIT2015"><font color='red'><img src="img/twitter.png" alt="Smiley face" height="42" width="42"></font></a></p>
 								</p></font>
 							</div>
 						</div>
@@ -274,6 +294,25 @@
         End about
         ==================================== -->
   	
+
+
+        <section id="theme" class="theme">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+						<h2>THEME</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+                <p> <font size=3px >Success is something that cannot be bound by parameters. Interestingly, if we try to analyze the true meaning of Success, one comes to wonder, What is Success? Is it Satisfaction? Freedom? Or an ultimate Maze of inescapable Illusion? Ultimately, is it everything what one hoped for, while aiming at it?
+                <br><br>
+				Introducing TEDx MSRIT, we want to look deep into the ways individual perception of success changes the world around us.
+				Join us and lets mold ideas into progress, into history.
+				</font></p>											
+				</div>
+			</div>
+		</section>
+
         <!--
         speakers
         ==================================== -->
@@ -660,8 +699,7 @@
 							<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
 						</div>
 						
-						<div class="col-md-2">
-						</div>
+						
 
 						
 						<div class="col-md-1">
@@ -688,9 +726,21 @@
 						<a href="http://www.fever.fm/">
 						<img src="img/sponsors/fever.jpg"></a>
 						</div>
+
+						<div class="col-md-2">
+						</div>
+
+						<div class="col-md-1">
+						<font color="#f37021"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BREAKFAST<h3></font><br>
+						<a href="http://www.brekkie.in/">
+						<img src="img/sponsors/brekkie.png"></a>
+						</div>
+
 				 
 					</div>
 				</div>
+
+
 			
 		</section>
 
@@ -704,10 +754,38 @@
 							<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
 						</div>
 						
-						<center><h1>Coming Soon!!<h1></center>
+						
+
+						
+						<div class="col-md-1">
+						<a href="http://www.aircel.com/">
+						<br>
+						<img src="img/sponsors/aircel.jpg"></a>
+						</div>
+							
+						<div class="col-md-3">
+						</div>
+						
+						<div class="col-md-1">
+						<a href="http://corpbank.com/">
+						<img src="img/sponsors/corpbank1.gif"></a>
+						</div>
+
+						<div class="col-md-4">
+						</div>
+						
+						<div class="col-md-2">
+						<a href="http://www.providenthousing.com/">
+						<br>
+						<img src="img/sponsors/providenthousing.png"></a>
+						</div>
+
+						
+
 				 
 					</div>
 				</div>
+
 			
 		</section>
 
@@ -793,6 +871,29 @@
         <!--
         End sponsors
         ==================================== -->
+
+        <section id="map" class="map">
+        	<div class="container">
+  				<div class="row">
+
+
+  						<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="1000ms">
+							<h2>LOCATION</h2>
+							<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+						</div>
+			      	<div id="map-outer" class="col-md-12">
+			         	<div id="address" class="col-md-4">
+			            <h2>Our Location</h2>
+			            <address>
+			            <strong>M.S. Ramaiah Institute of Technology</strong><br>
+			                MSR Nagar, MSRIT post<br>
+			                Bangalore - 560034<br>
+			           	</address>
+			          	</div>
+       					<div id="map-container" class="col-md-8"></div>
+     				</div><!-- /map-outer -->
+  </div> 
+        </section>
        
 		
 		
@@ -806,7 +907,10 @@
 						</div>
 					</div>
 			</div>
+			<div class="col-md-12"><br>
+			<p align="right"><font size="2">Designed by Mounica Naidu and Fakhruddin Tahery</font></p>
 			
+			</div>
 			
 		</footer>
 		
@@ -852,6 +956,37 @@
 		</script> 
 		<!-- Custom Functions -->
         <script src="js/custom.js"></script>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+        <script>	
+	
+      function init_map() {
+		var myLocation = new google.maps.LatLng(13.0300,77.5650);
+		  
+        var mapOptions = {
+          center: myLocation,
+          zoom: 14
+        };
+		
+		var marker = new google.maps.Marker({
+			position: myLocation,
+			title:"RAMAIAH"});
+			
+        var map = new google.maps.Map(document.getElementById("map-container"),
+            mapOptions);
+		
+		marker.setMap(map);	
+
+      }
+	  
+      google.maps.event.addDomListener(window, 'load', init_map);
+	  
+    </script>
+
 		
 		
 		
